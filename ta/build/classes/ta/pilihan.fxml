@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="778.0" style="-fx-background-color: #00BFFF;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ta.PilihanController">
+   <children>
+      <Pane prefHeight="629.0" prefWidth="337.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Pane layoutX="61.0" layoutY="348.0" prefHeight="73.0" prefWidth="199.0" style="-fx-background-color: #00BFFF;">
+               <children>
+                  <Label layoutX="6.0" layoutY="13.0" text="Ilmu Pengetahuan Alam">
+                     <font>
+                        <Font size="17.5" />
+                     </font>
+                  </Label>
+                  <JFXCheckBox fx:id="d" checkedColor="#d4ee11" layoutX="84.0" layoutY="42.0" text=" " />
+               </children>
+            </Pane>
+            <Pane layoutX="61.0" layoutY="260.0" prefHeight="82.0" prefWidth="199.0" style="-fx-background-color: #00BFFF;">
+               <children>
+                  <Label layoutX="56.0" layoutY="5.0" text="Matematika">
+                     <font>
+                        <Font size="17.5" />
+                     </font>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="28.0" text="Bahasa Inggris">
+                     <font>
+                        <Font size="17.5" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="61.0" layoutY="160.0" prefHeight="93.0" prefWidth="199.0" style="-fx-background-color: #00BFFF;">
+               <children>
+                  <Label layoutX="7.0" layoutY="14.0" text="Ilmu Pengetahuan Alam">
+                     <font>
+                        <Font size="17.5" />
+                     </font>
+                  </Label>
+                  <Label layoutX="48.0" layoutY="36.0" text="Bahasa Inggris">
+                     <font>
+                        <Font size="17.5" />
+                     </font>
+                  </Label>
+                  <JFXCheckBox fx:id="b" checkedColor="#d4ee11" layoutX="84.0" layoutY="63.0" text=" " />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="60.0" layoutY="61.0" prefHeight="93.0" prefWidth="199.0" style="-fx-background-color: #00BFFF;">
+         <children>
+            <Label layoutX="7.0" layoutY="14.0" text="Ilmu Pengetahuan Alam">
+               <font>
+                  <Font size="17.5" />
+               </font></Label>
+            <Label layoutX="55.0" layoutY="36.0" text="Matematika">
+               <font>
+                  <Font size="17.5" />
+               </font></Label>
+            <JFXCheckBox fx:id="a" checkedColor="#d4ee11" layoutX="84.0" layoutY="65.0" text=" " />
+         </children>
+      </Pane>
+      <Pane layoutX="61.0" layoutY="428.0" prefHeight="73.0" prefWidth="199.0" style="-fx-background-color: #00BFFF;">
+         <children>
+            <Label layoutX="43.0" layoutY="12.0" text="Bahasa Inggris">
+               <font>
+                  <Font size="17.5" />
+               </font></Label>
+            <JFXCheckBox fx:id="e" checkedColor="#d4ee11" layoutX="84.0" layoutY="45.0" text=" " />
+         </children>
+      </Pane>
+      <Pane layoutX="61.0" layoutY="507.0" prefHeight="73.0" prefWidth="199.0" style="-fx-background-color: #00BFFF;">
+         <children>
+            <Label layoutX="56.0" layoutY="8.0" text="Matematika">
+               <font>
+                  <Font size="17.5" />
+               </font></Label>
+            <JFXCheckBox fx:id="f" checkedColor="#d4ee11" layoutX="84.0" layoutY="41.0" text=" " />
+         </children>
+      </Pane>
+      <Label layoutX="34.0" layoutY="14.0" text="Pilih Paket Mata Pelajaran" textFill="#1e1e1c">
+         <font>
+            <Font name="Aldine-Regular" size="37.0" />
+         </font>
+      </Label>
+      <JFXCheckBox fx:id="c" checkedColor="#d4ee11" layoutX="146.0" layoutY="317.0" text=" " />
+      <JFXTextArea fx:id="hasil" editable="false" layoutX="349.0" layoutY="385.0" maxWidth="575.0" minWidth="332.0" prefHeight="222.0" prefWidth="420.0">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </JFXTextArea>
+      <Pane layoutX="378.0" layoutY="112.0" prefHeight="166.0" prefWidth="357.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Label layoutX="32.0" layoutY="30.0" text="Nama" />
+            <Label layoutX="32.0" layoutY="127.0" text="Pilih jam" />
+            <JFXTextField fx:id="nama" layoutX="124.0" layoutY="20.0" maxWidth="210.0" minWidth="210.0" prefHeight="31.0" prefWidth="210.0" />
+            <JFXRadioButton fx:id="radio1" layoutX="110.0" layoutY="130.0" text="14.00-1600" />
+            <JFXRadioButton fx:id="radio2" layoutX="231.0" layoutY="128.0" text="18.00-20.00" />
+            <JFXRadioButton fx:id="hari1" layoutX="110.0" layoutY="66.0" text="Senin , Rabu , Kamis" />
+            <JFXRadioButton fx:id="hari2" layoutX="110.0" layoutY="91.0" text="Selasa , Jumat , Sabtu" />
+            <Label layoutX="32.0" layoutY="66.0" text="Pilih hari" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="selesai" buttonType="RAISED" contentDisplay="CENTER" layoutX="504.0" layoutY="296.0" onAction="#proses" prefHeight="46.0" prefWidth="141.0" text="SELESAI" textFill="#0a0909">
+         <font>
+            <Font name="COFFE &amp; MILK" size="23.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
